@@ -13,16 +13,47 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Script src='/sc.js' strategy='lazyOnload'/>
-
+      <nav className={styles.mainnav}>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Blog</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to HuntingCoder
+          Hunting Coder
         </h1>
 
         <p className={styles.description}>
           For hunting coder From HuntingCoder
         </p>
+        
+        <div className="blogs">
+          <h2>Popular Blogs</h2>
+          <div className="blogItem">
+            <h3>How to learn JS in 2022</h3>
+            <p>JS is used to design logic in web!</p>
+          </div>
+
+          <div className="blogItem">
+            <h3>How to learn JS in 2022</h3>
+            <p>JS is used to design logic in web!</p>
+          </div>
+
+          <div className="blogItem">
+            <h3>How to learn JS in 2022</h3>
+            <p>JS is used to design logic in web!</p>
+          </div>
+
+          <div className="blogItem">
+            <h3>How to learn JS in 2022</h3>
+            <p>JS is used to design logic in web!</p>
+          </div>
+        </div>
+
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
